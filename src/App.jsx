@@ -9,11 +9,13 @@ import {
   InputLabel,
 } from "./styles";
 
+import UsersImage from "./assets/users.png"
+
 function App() {
   return (
     <Container>
       <TopBackground>
-        <img />
+        <img src={UsersImage} alt="imagem-usuarios" />
       </TopBackground>
 
       <Form>
@@ -23,14 +25,14 @@ function App() {
           <div>
             <div>
               <InputLabel>
-                Nome<span>*</span>
+                Nome<span> *</span>
               </InputLabel>
               <Input type="text" placeholder="Nome do usuário" />
             </div>
 
             <div>
               <InputLabel>
-                Idade<span>*</span>
+                Idade<span> *</span>
               </InputLabel>
               <Input type="number" placeholder="Ideda do usuário" />
             </div>
@@ -38,7 +40,7 @@ function App() {
 
           <div>
             <InputLabel>
-              Email<span>*</span>
+              Email<span> *</span>
             </InputLabel>
             <Input type="email" placeholder="Email do usuário" />
           </div>
